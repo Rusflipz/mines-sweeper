@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mines-sweeper/static/css/main.667b20c5.css",
-    "main.js": "/mines-sweeper/static/js/main.5b1f3c84.js",
+    "main.css": "/mines-sweeper/static/css/main.21ad15ec.css",
+    "main.js": "/mines-sweeper/static/js/main.fe828f7c.js",
     "static/js/885.c8b8a5c4.chunk.js": "/mines-sweeper/static/js/885.c8b8a5c4.chunk.js",
     "static/media/explosionSound.mp3": "/mines-sweeper/static/media/explosionSound.917806c5563ee11ecaf2.mp3",
     "static/media/winSound.mp3": "/mines-sweeper/static/media/winSound.fe11611dce7f8accc24a.mp3",
@@ -11,12 +11,12 @@
     "index.html": "/mines-sweeper/index.html",
     "static/media/home.svg": "/mines-sweeper/static/media/home.d5316984e56ad0f5e2e6e6d354b40874.svg",
     "static/media/flag.svg": "/mines-sweeper/static/media/flag.e9cdde8caa842ca4146009764fbc7a65.svg",
-    "main.667b20c5.css.map": "/mines-sweeper/static/css/main.667b20c5.css.map",
-    "main.5b1f3c84.js.map": "/mines-sweeper/static/js/main.5b1f3c84.js.map",
+    "main.21ad15ec.css.map": "/mines-sweeper/static/css/main.21ad15ec.css.map",
+    "main.fe828f7c.js.map": "/mines-sweeper/static/js/main.fe828f7c.js.map",
     "885.c8b8a5c4.chunk.js.map": "/mines-sweeper/static/js/885.c8b8a5c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.667b20c5.css",
-    "static/js/main.5b1f3c84.js"
+    "static/css/main.21ad15ec.css",
+    "static/js/main.fe828f7c.js"
   ]
 }
