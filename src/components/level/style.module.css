@@ -1,0 +1,30 @@
+.main_item {
+    height: 200px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.main_item_button {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px solid #867575;
+}
+
+.main_item_title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main_item_description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}

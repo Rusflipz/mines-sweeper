@@ -1,0 +1,135 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game_over {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.3);
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_over_block {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 150px;
+    height: fit-content;
+}
+
+.game_container {
+    max-width: 1980px;
+    width: auto;
+    /*box-sizing: border-box;*/
+    /*width: fit-content;*/
+    border: 10px solid rgb(186, 186, 186);
+    background-color: rgb(186, 186, 186);;
+}
+
+.game_controls {
+    width: 400px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    @media (max-width: 750px) {
+        width: 320px;
+    }
+}
+
+.control_button {
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(186, 186, 186);
+
+    @media (max-width: 750px) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.control_button:hover {
+    cursor: pointer;
+}
+
+.control_button_active {
+    background-color: #282c34;
+}
+
+.game_info_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    width: auto;
+    height: 120px;
+    border: 3px solid;
+    background-color: rgb(186, 186, 186);
+    border-color: rgb(247, 247, 247) rgb(124, 124, 124) rgb(124, 124, 124) rgb(247, 247, 247);
+}
+
+.game_info {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    &.Easy {
+        padding: 15px 15px;
+    }
+
+    &.Medium {
+        padding: 15px 30px;
+    }
+
+    &.Hard {
+        padding: 15px 50px;
+    }
+}
+
+.game_info_smile {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+}
+
+.game_info_smile_conteiner {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(186, 186, 186);
+    border: 3px solid;
+    background-color: rgb(186, 186, 186);
+    border-color: rgb(247, 247, 247) rgb(124, 124, 124) rgb(124, 124, 124) rgb(247, 247, 247);
+}
+
+.game_info_smile_conteiner:hover {
+    border-color: rgb(124, 124, 124) rgb(247, 247, 247) rgb(247, 247, 247) rgb(124, 124, 124);
+    cursor: pointer;
+
+    .game_info_smile {
+        transform: scale(0.9);
+    }
+}
+

@@ -1,0 +1,14 @@
+.cell {
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+

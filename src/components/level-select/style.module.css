@@ -1,0 +1,34 @@
+.main {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: aquamarine;*/
+}
+
+.main_title {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.main_body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+    gap: 30px
+}
+
+.main_item {
+    height: 200px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}

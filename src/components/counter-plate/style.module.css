@@ -1,0 +1,24 @@
+.plate {
+    display: flex;
+    justify-content: center;
+    color: rgb(246, 1, 4);
+    width: 80px;
+    height: 50px;
+    border: 3px solid;
+    background-color: rgb(49, 49, 49);
+    border-color: rgb(124, 124, 124) rgb(247, 247, 247) rgb(247, 247, 247) rgb(124, 124, 124);
+}
+
+.plate_value {
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.plate_label {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,15 @@
+<svg id="Layer_1" enable-background="new 0 0 48 48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <path d="m32 8h6v2h-6z" fill="#90a4ae"/>
+    <path d="m32 10h6v9.5h-6z" fill="#cfd8dc"/>
+    <g>
+        <path d="m41 42h-34v-21.528l17-12.548 17 12.548z" fill="#cfd8dc"/>
+    </g>
+    <g>
+        <path d="m24 6-18.191 13.432 1.213 2.021 16.978-12.453 16.978 12.453 1.213-2.021z" fill="#b71c1c"/>
+    </g>
+    <path d="m17 24h14v18h-14z" fill="#bf360c"/>
+    <path d="m19 26h10v16h-10z" fill="#d84315"/>
+    <circle cx="27" cy="33" fill="#ff8a65" r="1"/>
+    <path d="m21 15h6v6h-6z" fill="#ecf0f1"/>
+    <path d="m22 16h4v4h-4z" fill="#2196f3"/>
+</svg>
