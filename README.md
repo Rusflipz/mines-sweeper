@@ -1,0 +1,2 @@
+# mines-sweeper
+Игра сапер
