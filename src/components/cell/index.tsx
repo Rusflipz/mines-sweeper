@@ -31,7 +31,7 @@ import styles from './style.module.css'
  */
 const cellText = (cellInfo: TCellInfo): React.JSX.Element | string | number => {
 
-    if (cellInfo.flagged) return <img src={FlagIcon} className={styles.bomb_icon} alt="flag" />
+    if (cellInfo.flagged) return <img src={FlagIcon} className={styles.flag_icon} alt="flag" />
 
     if (cellInfo.isOpen && cellInfo.mine) return <img src={BombIcon} className={styles.bomb_icon} alt="bomb" />
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 import GamePage from '../../pages/game-page'
 import MainPage from '../../pages/main-page'
@@ -7,14 +7,14 @@ import MainPage from '../../pages/main-page'
 import styles from './style.module.css'
 
 const App = () => {
-    const router = createBrowserRouter([
-        {
-            path: '/',
-            element: <MainPage />,
-        },
+    const router = createHashRouter([
         {
             path: 'game',
             element: <GamePage />,
+        },
+        {
+            path: '*',
+            element: <MainPage />,
         },
     ])
 
