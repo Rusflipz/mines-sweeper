@@ -7,6 +7,10 @@
     padding: 20px;
     background-color: rgba(256, 256, 256, 0.85);
     border-radius: 30px;
+
+    @media (max-width: 750px) {
+        width: calc(100% - 60px);
+    }
 }
 
 .modal_title {

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
@@ -61,6 +62,8 @@ const GamePage = () => {
         window.localStorage.setItem('gameLevel', gameLevel)
     }, [gameLevel])
 
+    const rootDiv = document.getElementById('modal')
+
     return (<>
             <div className={styles.game_page}>
                 <div className={styles.game_container}>
@@ -96,7 +99,8 @@ const GamePage = () => {
                     </div>
                 </div>
             </div>
-            <Modals timerControl={timerControl} />
+            {createPortal(<Modals timerControl={timerControl} />, rootDiv)}
+
         </>
     )
 }
