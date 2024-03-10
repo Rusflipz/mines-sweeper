@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/mines-sweeper/static/css/main.0409c2a7.css",
-    "main.js": "/mines-sweeper/static/js/main.44571ab9.js",
+    "main.css": "/mines-sweeper/static/css/main.509ae58b.css",
+    "main.js": "/mines-sweeper/static/js/main.ad1ea1d6.js",
     "static/js/885.c8b8a5c4.chunk.js": "/mines-sweeper/static/js/885.c8b8a5c4.chunk.js",
     "static/media/explosionSound.mp3": "/mines-sweeper/static/media/explosionSound.917806c5563ee11ecaf2.mp3",
     "static/media/winSound.mp3": "/mines-sweeper/static/media/winSound.fe11611dce7f8accc24a.mp3",
     "static/media/shovel.svg": "/mines-sweeper/static/media/shovel.78b7891b05a61e16d7573ad5d1b9ada8.svg",
     "static/media/smile.svg": "/mines-sweeper/static/media/smile.70adafde9dd5aceb54c46fdd1a148350.svg",
     "static/media/bomb.svg": "/mines-sweeper/static/media/bomb.87c67327728e4483bff72c29acb8eb39.svg",
-    "index.html": "/mines-sweeper/index.html",
     "static/media/home.svg": "/mines-sweeper/static/media/home.d5316984e56ad0f5e2e6e6d354b40874.svg",
+    "index.html": "/mines-sweeper/index.html",
     "static/media/flag.svg": "/mines-sweeper/static/media/flag.e9cdde8caa842ca4146009764fbc7a65.svg",
-    "main.0409c2a7.css.map": "/mines-sweeper/static/css/main.0409c2a7.css.map",
-    "main.44571ab9.js.map": "/mines-sweeper/static/js/main.44571ab9.js.map",
+    "main.509ae58b.css.map": "/mines-sweeper/static/css/main.509ae58b.css.map",
+    "main.ad1ea1d6.js.map": "/mines-sweeper/static/js/main.ad1ea1d6.js.map",
     "885.c8b8a5c4.chunk.js.map": "/mines-sweeper/static/js/885.c8b8a5c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0409c2a7.css",
-    "static/js/main.44571ab9.js"
+    "static/css/main.509ae58b.css",
+    "static/js/main.ad1ea1d6.js"
   ]
 }
