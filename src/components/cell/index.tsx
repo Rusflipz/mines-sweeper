@@ -9,18 +9,22 @@ import BombIcon from '../../assets/images/bomb.svg'
 import FlagIcon from '../../assets/images/flag.svg'
 import explosionSound from '../../assets/sounds/explosionSound.mp3'
 import winSound from '../../assets/sounds/winSound.mp3'
-import { constants } from '../../constants/constants'
+import { constants, gameSettings } from '../../constants/constants'
 import { useAppDispatch } from '../../hooks/use-app-dispatch'
 import {
     arraySelector,
+    gameLevelSelector,
+    isFirstClickSelector,
     isFlagActiveSelector,
     isShovelActiveSelector,
     setFlagged,
+    setIsFirstClick,
     setIsGameOver,
     setIsOpen,
 } from '../../store/slice/aplication-slice'
 import { TCellInfo } from '../../typings/cells'
 import { checkWin } from '../../utils/checkWin'
+import { initGame } from '../../utils/initGame'
 import { nextTick } from '../../utils/nextTick'
 import { openEmptyCell } from '../../utils/openEmptyCell'
 
@@ -45,6 +49,8 @@ const Cell = ({ cellInfo }: { cellInfo: TCellInfo }) => {
     const array = useSelector(arraySelector)
     const isFlagActive = useSelector(isFlagActiveSelector)
     const isShovelActive = useSelector(isShovelActiveSelector)
+    const isFirstClick = useSelector(isFirstClickSelector)
+    const gameLevel = useSelector(gameLevelSelector)
     const [playExplosionSound] = useSound(explosionSound)
     const [playWinSound] = useSound(winSound)
 
@@ -58,6 +64,14 @@ const Cell = ({ cellInfo }: { cellInfo: TCellInfo }) => {
     }, [cellInfo])
 
     const handleClick = () => {
+        if (isFirstClick) {
+            initGame(gameSettings[gameLevel], cellInfo)
+
+            dispatch(setIsFirstClick(false))
+
+            return
+        }
+
         if (isShovelActive && !cellInfo.flagged) {
             dispatch(setIsOpen(cellInfo))
 

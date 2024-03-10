@@ -21,6 +21,7 @@ import {
     isShovelActiveSelector,
     minesLeftSelector,
     setFlagActive,
+    setIsFirstClick,
     setIsGameStopped,
     setShovelActive,
 } from '../../store/slice/aplication-slice'
@@ -41,16 +42,18 @@ const GamePage = () => {
 
     const navigate = useNavigate()
 
-    const ref = useRef(true)
+    const firstRenderRef = useRef(true)
 
     useEffect(() => {
-        if (ref.current) {
-            startGame(ref.current, timerControl)
+        if (firstRenderRef.current) {
+            startGame(firstRenderRef.current, timerControl)
         }
-        closeModal()
+
+        dispatch(setIsFirstClick(true))
+        dispatch(closeModal())
 
         return () => {
-            ref.current = false
+            firstRenderRef.current = false
         }
     }, [])
 

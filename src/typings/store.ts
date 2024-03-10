@@ -20,4 +20,5 @@ export type TInitialState = {
     minesLeft: number
     gameLevel: EGameSettingsNames
     modalType: EModalTypes
+    isFirstClick: boolean;
 }

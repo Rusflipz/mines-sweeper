@@ -7,7 +7,7 @@ export const setMines = (array: TArray, minesCount: number) => {
         const a = getRandomInt(array.length)
         const b = getRandomInt(array[0].length)
 
-        if (!array[a][b].mine) {
+        if (!array[a][b]?.mine && !array[a][b]?.isOpen) {
 
             array[a][b].mine = true
             i++

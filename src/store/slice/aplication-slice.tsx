@@ -16,6 +16,7 @@ export const initialState: TInitialState = {
     minesLeft: 0,
     modalType: null,
     gameLevel: EGameSettingsNames.Easy,
+    isFirstClick: true,
 }
 
 
@@ -64,6 +65,9 @@ export const aplicationSlice = createSlice({
             state.isGameStopped = false
             state.isGameWin = false
         },
+        setIsFirstClick: (state: TInitialState, { payload }: { payload: boolean }) => {
+            state.isFirstClick = payload
+        },
     },
 })
 
@@ -79,6 +83,7 @@ export const {
     setMinesLeft,
     setIsGameStopped,
     closeModal,
+    setIsFirstClick,
 } = aplicationSlice.actions
 
 export default aplicationSlice.reducer
@@ -93,4 +98,5 @@ export const gameLevelSelector = (state: { application: TInitialState }) => stat
 export const minesLeftSelector = (state: { application: TInitialState }) => state.application.minesLeft
 export const isModalOpenSelector = (state: { application: TInitialState }) => state.application.isModalOpen
 export const modalTypeSelector = (state: { application: TInitialState }) => state.application.modalType
+export const isFirstClickSelector = (state: { application: TInitialState }) => state.application.isFirstClick
 

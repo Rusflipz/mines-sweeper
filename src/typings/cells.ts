@@ -1,5 +1,3 @@
-export type TArray = Array<Array<TCellInfo>>
-
 export type TCellInfo = {
     number: number,
     mine: boolean,
@@ -8,3 +6,5 @@ export type TCellInfo = {
     row: number,
     col: number
 }
+
+export type TArray = Array<Array<TCellInfo>>
